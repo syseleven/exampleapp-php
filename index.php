@@ -11,6 +11,8 @@
 <div style="font-family: Poiret One; font-size: 1.5em; letter-spacing: 0.3em;">
 
 <?php
+session.save_handler = "memcache";
+session.save_path = "tcp://lb0.node.consul:11211";
 echo "<br>";
 echo "<h1> AnyApp </h1>";
 echo "<br>";
